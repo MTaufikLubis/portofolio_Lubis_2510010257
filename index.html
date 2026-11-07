@@ -1,0 +1,1808 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>IT SOLUTION (ITS) | Katalog Digital Unit Usaha HMP-TI</title>
+  <meta name="description"
+    content="Katalog digital resmi IT Solution (ITS) - Unit usaha di bawah naungan HMP-TI yang menyediakan layanan F&B, Percetakan & Dokumen, Konsinyasi, dan Jasa Kreatif untuk mahasiswa.">
+  <meta name="keywords"
+    content="IT Solution, ITS, HMPTI, HMP-TI, Katalog Digital, Percetakan Mahasiswa, F&B Kampus, Jasa Desain, Konsinyasi">
+  <meta name="author" content="IT Solution HMP-TI">
+
+  <!-- Favicon menggunakan Logo Resmi ITS -->
+  <link rel="icon" type="image/jpeg" href="Logo ITS.jpeg">
+
+  <!-- Google Fonts: Plus Jakarta Sans & Space Grotesk -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap"
+    rel="stylesheet">
+
+  <!-- Lucide Icons CDN -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <!-- External Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- =================================================================
+       A. NAVBAR (HEADER & NAVIGATION)
+       ================================================================= -->
+  <header class="site-header" id="header">
+    <div class="container navbar-container">
+      <!-- Brand Logo & Name -->
+      <a href="#beranda" class="navbar-brand" aria-label="Beranda IT Solution">
+        <img src="Logo ITS.jpeg" alt="Logo Resmi IT Solution HMP-TI" class="brand-logo"
+          onerror="this.onerror=null;this.src='assets/images/Logo%20ITS.jpeg'">
+        <div class="brand-text">
+          <span class="brand-title">IT SOLUTION</span>
+          <span class="brand-subtitle">UNIT USAHA HMP-TI </span>
+        </div>
+      </a>
+
+      <!-- Desktop Navigation Menu -->
+      <nav class="nav-desktop" aria-label="Navigasi Utama">
+        <ul class="nav-links">
+          <li><a href="#beranda" class="nav-link active">Beranda</a></li>
+          <li><a href="#about" class="nav-link">Tentang Kami</a></li>
+          <li class="nav-item-dropdown">
+            <a href="#unit-usaha" class="nav-link nav-link-dropdown">
+              <span>Unit Usaha</span>
+              <i data-lucide="chevron-down" class="dropdown-chevron"></i>
+            </a>
+            <ul class="dropdown-menu">
+              <li><a href="#katalog" class="dropdown-item"><i data-lucide="coffee"></i> <span>1. Unit F&B</span></a>
+              </li>
+              <li><a href="#percetakan" class="dropdown-item"><i data-lucide="printer"></i> <span>2. Percetakan &
+                    Dokumen</span></a></li>
+              <li><a href="#konsinyasi" class="dropdown-item"><i data-lucide="handshake"></i> <span>3. Konsinyasi &
+                    Kemitraan</span></a></li>
+              <li><a href="#jasa-kreatif" class="dropdown-item"><i data-lucide="palette"></i> <span>4. Jasa
+                    Kreatif</span></a></li>
+            </ul>
+          </li>
+          <li><a href="#katalog" class="nav-link">Katalog</a></li>
+          <li><a href="#operasional" class="nav-link">Operasional</a></li>
+          <li><a href="#kontak" class="nav-link">Kontak</a></li>
+        </ul>
+      </nav>
+
+      <!-- Action Button & Hamburger for Mobile -->
+      <div class="navbar-actions">
+        <a href="#katalog" class="btn btn-primary btn-sm btn-nav-cta">
+          <i data-lucide="shopping-bag"></i>
+          <span>Lihat Katalog</span>
+        </a>
+
+        <!-- Mobile Menu Toggle Button -->
+        <button type="button" class="mobile-toggle" id="mobile-toggle" aria-label="Buka Menu Navigasi"
+          aria-expanded="false" aria-controls="mobile-menu">
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Drawer Backdrop Overlay -->
+    <div class="mobile-backdrop" id="mobile-backdrop" aria-hidden="true"></div>
+
+    <!-- Mobile Drawer Navigation -->
+    <aside class="mobile-menu" id="mobile-menu" aria-hidden="true" aria-label="Menu Seluler">
+      <div class="mobile-menu-inner">
+        <div class="mobile-menu-header">
+          <div class="mobile-brand">
+            <img src="Logo ITS.jpeg" alt="Logo IT Solution" class="mobile-brand-logo"
+              onerror="this.onerror=null;this.src='assets/images/Logo%20ITS.jpeg'">
+            <div class="mobile-brand-text">
+              <span class="mobile-brand-title">IT SOLUTION</span>
+              <span class="mobile-brand-sub">Unit Usaha HMP-TI</span>
+            </div>
+          </div>
+          <button type="button" class="mobile-menu-close" id="mobile-menu-close" aria-label="Tutup Menu Navigasi">
+            <i data-lucide="x"></i>
+          </button>
+        </div>
+
+        <nav class="mobile-nav" aria-label="Navigasi Seluler">
+          <ul class="mobile-nav-links">
+            <li><a href="#beranda" class="mobile-nav-link active"><i data-lucide="home"></i> <span>Beranda</span></a>
+            </li>
+            <li><a href="#about" class="mobile-nav-link"><i data-lucide="info"></i> <span>Tentang Kami</span></a></li>
+            <li><a href="#unit-usaha" class="mobile-nav-link"><i data-lucide="layers"></i> <span>Unit Usaha
+                  Utama</span></a></li>
+
+            <li class="mobile-sub-divider"><span>Unit Usaha ITS</span></li>
+            <li><a href="#katalog" class="mobile-nav-link mobile-sub-link"><i data-lucide="coffee"></i> <span>1. Unit
+                  F&B</span></a></li>
+            <li><a href="#percetakan" class="mobile-nav-link mobile-sub-link"><i data-lucide="printer"></i> <span>2.
+                  Percetakan & Dokumen</span></a></li>
+            <li><a href="#konsinyasi" class="mobile-nav-link mobile-sub-link"><i data-lucide="handshake"></i> <span>3.
+                  Unit Konsinyasi</span></a></li>
+            <li><a href="#jasa-kreatif" class="mobile-nav-link mobile-sub-link"><i data-lucide="palette"></i> <span>4.
+                  Jasa Kreatif</span></a></li>
+
+            <li class="mobile-sub-divider"><span>Informasi Layanan</span></li>
+            <li><a href="#operasional" class="mobile-nav-link"><i data-lucide="clock"></i> <span>Jam
+                  Operasional</span></a></li>
+            <li><a href="#kontak" class="mobile-nav-link"><i data-lucide="phone"></i> <span>Kontak Kami</span></a></li>
+          </ul>
+
+          <div class="mobile-menu-footer">
+            <a href="https://wa.me/62895352585866" target="_blank" rel="noopener noreferrer"
+              class="btn btn-success btn-block">
+              <i data-lucide="message-circle"></i>
+              <span>Hubungi via WhatsApp</span>
+            </a>
+          </div>
+        </nav>
+      </div>
+    </aside>
+  </header>
+
+  <main>
+    <!-- =================================================================
+         B. HERO SECTION
+         ================================================================= -->
+    <section class="hero-section" id="beranda">
+      <!-- Background Ambient Glow & Grid -->
+      <div class="hero-grid-pattern" aria-hidden="true"></div>
+      <div class="ambient-glow glow-1" aria-hidden="true"></div>
+      <div class="ambient-glow glow-2" aria-hidden="true"></div>
+
+      <div class="container hero-container">
+        <!-- Hero Text Content -->
+        <div class="hero-content reveal-on-scroll">
+          <div class="hero-badge">
+            <span class="pulse-dot"></span>
+            <span class="badge-text">Unit Usaha Resmi HMP-TI</span>
+          </div>
+
+          <!-- Headline Sesuai Ketentuan -->
+          <h1 class="hero-headline">Satu Tempat, Beragam Kebutuhan.</h1>
+
+          <!-- Subheadline Sesuai Ketentuan -->
+          <p class="hero-subheadline">
+            Temukan berbagai produk dan layanan dari IT Solution, unit usaha HMP-TI yang hadir untuk mendukung kebutuhan
+            mahasiswa melalui layanan yang praktis, kreatif, dan terpercaya.
+          </p>
+
+          <!-- Action Buttons -->
+          <div class="hero-actions">
+            <a href="#unit-usaha" class="btn btn-primary btn-lg">
+              <span>Jelajahi Unit Usaha</span>
+              <i data-lucide="arrow-down"></i>
+            </a>
+            <a href="#kontak" class="btn btn-outline btn-lg">
+              <i data-lucide="message-square"></i>
+              <span>Hubungi Kami</span>
+            </a>
+          </div>
+
+          <!-- Trust & Value Metrics -->
+          <div class="hero-metrics">
+            <div class="metric-item">
+              <div class="metric-icon"><i data-lucide="store"></i></div>
+              <div class="metric-info">
+                <span class="metric-number">4 Unit</span>
+                <span class="metric-label">Layanan Terpadu</span>
+              </div>
+            </div>
+            <div class="metric-divider" aria-hidden="true"></div>
+            <div class="metric-item">
+              <div class="metric-icon"><i data-lucide="clock"></i></div>
+              <div class="metric-info">
+                <span class="metric-number">07.30 - 21.30</span>
+                <span class="metric-label">WITA Operasional</span>
+              </div>
+            </div>
+            <div class="metric-divider" aria-hidden="true"></div>
+            <div class="metric-item">
+              <div class="metric-icon"><i data-lucide="users"></i></div>
+              <div class="metric-info">
+                <span class="metric-number">Mahasiswa</span>
+                <span class="metric-label">Dari & Untuk Kampus</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hero Visual Showcase -->
+        <div class="hero-visual reveal-on-scroll">
+          <div class="visual-card-wrapper">
+            <!-- Central Visual Glass Card -->
+            <div class="visual-card">
+              <div class="card-glow-ring" aria-hidden="true"></div>
+              <div class="card-logo-container">
+                <img src="Logo ITS.jpeg" alt="Logo IT Solution HMP-TI" class="hero-logo-img"
+                  onerror="this.onerror=null;this.src='assets/images/Logo%20ITS.jpeg'">
+              </div>
+
+              <div class="visual-card-info">
+                <h3 class="visual-card-title">IT SOLUTION</h3>
+                <p class="visual-card-sub">Inovasi, Solusi & Kolaborasi Mahasiswa</p>
+                <div class="visual-tag-row">
+                  <span class="visual-pill"><i data-lucide="coffee"></i> F&B</span>
+                  <span class="visual-pill"><i data-lucide="printer"></i> Print</span>
+                  <span class="visual-pill"><i data-lucide="handshake"></i> Konsinyasi</span>
+                  <span class="visual-pill"><i data-lucide="palette"></i> Kreatif</span>
+                </div>
+              </div>
+
+              <!-- Status Live Jam Operasional -->
+              <div class="card-status-bar" id="hero-status-pill">
+                <span class="status-indicator" id="status-indicator-dot"></span>
+                <span class="status-text" id="status-indicator-text">Memeriksa jam operasional...</span>
+              </div>
+            </div>
+
+            <!-- Floating Highlights -->
+            <div class="floating-badge badge-top-right">
+              <i data-lucide="sparkles" class="float-icon text-amber"></i>
+              <div>
+                <strong>Praktis & Bersahabat</strong>
+                <span>Khusus Mahasiswa</span>
+              </div>
+            </div>
+
+            <div class="floating-badge badge-bottom-left">
+              <i data-lucide="map-pin" class="float-icon text-primary"></i>
+              <div>
+                <strong>Lokasi di Kampus</strong>
+                <span>Stand IT Solution</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =================================================================
+         C. ABOUT SECTION
+         ================================================================= -->
+    <section class="section about-section" id="about">
+      <div class="container">
+        <div class="section-header text-center reveal-on-scroll">
+          <span class="section-tag">Tentang Kami</span>
+          <h2 class="section-title">Mengenal IT Solution</h2>
+          <div class="section-line"></div>
+          <p class="section-description">
+            IT Solution merupakan unit usaha di bawah naungan HMP-TI (Himpunan Mahasiswa Program Studi Teknik
+            Informatika) yang menyediakan berbagai produk dan layanan untuk memenuhi kebutuhan mahasiswa.
+          </p>
+        </div>
+
+        <!-- 4 Pilar Pengenalan Singkat -->
+        <div class="about-grid">
+          <article class="about-card reveal-on-scroll">
+            <div class="about-icon-box icon-fnb">
+              <i data-lucide="utensils"></i>
+            </div>
+            <h3 class="about-card-title">1. Unit F&B</h3>
+            <p class="about-card-text">
+              Pilihan minuman segar, camilan ringan, serta perlengkapan darurat mahasiswa dengan harga bersahabat dan
+              mudah diakses di area kampus.
+            </p>
+            <a href="#katalog" class="about-card-link">Lihat Produk <i data-lucide="chevron-right"></i></a>
+          </article>
+
+          <article class="about-card reveal-on-scroll">
+            <div class="about-icon-box icon-percetakan">
+              <i data-lucide="file-text"></i>
+            </div>
+            <h3 class="about-card-title">2. Percetakan & Dokumen</h3>
+            <p class="about-card-text">
+              Layanan cepat untuk cetak tugas, dokumen warna/BW, jilid makalah, amplop dinas, stiker, hingga sertifikat
+              kegiatan akademik.
+            </p>
+            <a href="#percetakan" class="about-card-link">Lihat Layanan <i data-lucide="chevron-right"></i></a>
+          </article>
+
+          <article class="about-card reveal-on-scroll">
+            <div class="about-icon-box icon-konsinyasi">
+              <i data-lucide="handshake"></i>
+            </div>
+            <h3 class="about-card-title">3. Unit Konsinyasi</h3>
+            <p class="about-card-text">
+              Wadah kolaboratif titip jual produk buatan mahasiswa serta fasilitas kerja sama resmi dengan mitra UMKM
+              maupun pihak luar.
+            </p>
+            <a href="#konsinyasi" class="about-card-link">Pelajari Skema <i data-lucide="chevron-right"></i></a>
+          </article>
+
+          <article class="about-card reveal-on-scroll">
+            <div class="about-icon-box icon-kreatif">
+              <i data-lucide="palette"></i>
+            </div>
+            <h3 class="about-card-title">4. Jasa Kreatif</h3>
+            <p class="about-card-text">
+              Solusi visual profesional oleh talenta mahasiswa TI yang mencakup kebutuhan desain grafis, dokumentasi
+              foto, dan produksi video.
+            </p>
+            <a href="#jasa-kreatif" class="about-card-link">Lihat Portofolio <i data-lucide="chevron-right"></i></a>
+          </article>
+        </div>
+
+        <!-- Nilai Utama Banner -->
+        <div class="values-banner reveal-on-scroll">
+          <div class="values-header">
+            <h4>Mengapa Memilih Layanan IT Solution?</h4>
+          </div>
+          <div class="values-list">
+            <div class="value-item">
+              <i data-lucide="check-circle-2" class="text-success"></i>
+              <div>
+                <strong>Akses Cepat & Mudah</strong>
+                <span>Berada di lingkungan kampus mahasiswa</span>
+              </div>
+            </div>
+            <div class="value-item">
+              <i data-lucide="check-circle-2" class="text-success"></i>
+              <div>
+                <strong>Harga Mahasiswa</strong>
+                <span>Struktur tarif hemat dan transparan</span>
+              </div>
+            </div>
+            <div class="value-item">
+              <i data-lucide="check-circle-2" class="text-success"></i>
+              <div>
+                <strong>Dukungan Organisasi</strong>
+                <span>Dikelola resmi oleh HMP-TI yang terpercaya</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =================================================================
+         D. UNIT USAHA SECTION
+         ================================================================= -->
+    <section class="section unit-usaha-section" id="unit-usaha">
+      <div class="container">
+        <div class="section-header text-center reveal-on-scroll">
+          <span class="section-tag">Empat Pilar Layanan</span>
+          <h2 class="section-title">Unit Usaha IT Solution</h2>
+          <div class="section-line"></div>
+          <p class="section-description">
+            Kami hadir dengan empat unit usaha utama yang dirancang untuk menjawab ragam kebutuhan harian dan kegiatan
+            akademik seluruh mahasiswa.
+          </p>
+        </div>
+
+        <div class="unit-grid">
+          <!-- Kartu 1: F&B -->
+          <article class="unit-card reveal-on-scroll">
+            <div class="unit-card-badge">Unit 01</div>
+            <div class="unit-card-icon icon-fnb">
+              <i data-lucide="coffee"></i>
+            </div>
+            <h3 class="unit-card-title">F&B (Food & Drink)</h3>
+            <p class="unit-card-desc">
+              Menyediakan makanan dan minuman untuk kebutuhan mahasiswa.
+            </p>
+            <ul class="unit-highlights">
+              <li><i data-lucide="check"></i> 10+ Variasi Minuman Segar</li>
+              <li><i data-lucide="check"></i> Camilan & Makanan Ringan</li>
+              <li><i data-lucide="check"></i> Perlengkapan Darurat Mahasiswa</li>
+            </ul>
+            <div class="unit-card-footer">
+              <a href="#katalog" class="btn btn-outline btn-block">
+                <span>Lihat Katalog Produk</span>
+                <i data-lucide="arrow-right"></i>
+              </a>
+            </div>
+          </article>
+
+          <!-- Kartu 2: Percetakan & Dokumen -->
+          <article class="unit-card reveal-on-scroll">
+            <div class="unit-card-badge">Unit 02</div>
+            <div class="unit-card-icon icon-percetakan">
+              <i data-lucide="printer"></i>
+            </div>
+            <h3 class="unit-card-title">Percetakan & Dokumen</h3>
+            <p class="unit-card-desc">
+              Melayani kebutuhan print, fotokopi, jilid, dan layanan dokumen lainnya.
+            </p>
+            <ul class="unit-highlights">
+              <li><i data-lucide="check"></i> Print Hitam Putih & Warna Cepat</li>
+              <li><i data-lucide="check"></i> Cetak Amplop, Stiker & Sertifikat</li>
+              <li><i data-lucide="check"></i> Jilid Rapi untuk Laporan & Makalah</li>
+            </ul>
+            <div class="unit-card-footer">
+              <a href="#percetakan" class="btn btn-outline btn-block">
+                <span>Lihat Layanan Percetakan</span>
+                <i data-lucide="arrow-right"></i>
+              </a>
+            </div>
+          </article>
+
+          <!-- Kartu 3: Konsinyasi -->
+          <article class="unit-card reveal-on-scroll">
+            <div class="unit-card-badge">Unit 03</div>
+            <div class="unit-card-icon icon-konsinyasi">
+              <i data-lucide="shopping-cart"></i>
+            </div>
+            <h3 class="unit-card-title">Konsinyasi</h3>
+            <p class="unit-card-desc">
+              Menyediakan produk titip jual serta mendukung kerja sama dengan pihak luar.
+            </p>
+            <ul class="unit-highlights">
+              <li><i data-lucide="check"></i> Fasilitas Titip Jual Produk Mahasiswa</li>
+              <li><i data-lucide="check"></i> Kerja Sama Resmi dengan Pihak Luar</li>
+              <li><i data-lucide="check"></i> Lokasi Strategis di Ruang ITS</li>
+            </ul>
+            <div class="unit-card-footer">
+              <a href="#konsinyasi" class="btn btn-outline btn-block">
+                <span>Pelajari Kerja Sama</span>
+                <i data-lucide="arrow-right"></i>
+              </a>
+            </div>
+          </article>
+
+          <!-- Kartu 4: Jasa Kreatif -->
+          <article class="unit-card reveal-on-scroll">
+            <div class="unit-card-badge">Unit 04</div>
+            <div class="unit-card-icon icon-kreatif">
+              <i data-lucide="camera"></i>
+            </div>
+            <h3 class="unit-card-title">Jasa Kreatif</h3>
+            <p class="unit-card-desc">
+              Menawarkan layanan desain grafis, fotografi, dan videografi.
+            </p>
+            <ul class="unit-highlights">
+              <li><i data-lucide="check"></i> Desain Visual & Promosi Medsos</li>
+              <li><i data-lucide="check"></i> Dokumentasi Event & Sesi Foto</li>
+              <li><i data-lucide="check"></i> Produksi Video & Konten Kreatif</li>
+            </ul>
+            <div class="unit-card-footer">
+              <a href="#jasa-kreatif" class="btn btn-outline btn-block">
+                <span>Lihat Portofolio</span>
+                <i data-lucide="arrow-right"></i>
+              </a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- =================================================================
+         E. KATALOG PRODUK F&B
+         ================================================================= -->
+    <section class="section katalog-section" id="katalog">
+      <div class="container">
+        <div class="section-header text-center reveal-on-scroll">
+          <span class="section-tag">Katalog F&B & Perlengkapan</span>
+          <h2 class="section-title">Katalog Produk IT Solution</h2>
+          <div class="section-line"></div>
+          <p class="section-description">
+            Daftar lengkap minuman dingin, camilan renyah, dan perlengkapan harian mahasiswa yang tersedia di stand ITS.
+          </p>
+        </div>
+
+        <!-- Banner Informasi Pembelian Resmi -->
+        <div class="notice-card notice-fnb reveal-on-scroll">
+          <div class="notice-icon">
+            <i data-lucide="info"></i>
+          </div>
+          <div class="notice-content">
+            <h4 class="notice-title">Informasi Pembelian</h4>
+            <p class="notice-text">
+              Pembelian dilakukan secara langsung di ITS. Mahasiswa juga dapat menitipkan pembelian melalui teman.
+            </p>
+          </div>
+          <div class="notice-action">
+            <button type="button" class="btn btn-sm btn-outline-dark" id="btn-view-price-photo">
+              <i data-lucide="image"></i>
+              <span>Foto Daftar Harga Asli</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Filter & Search Bar -->
+        <div class="catalog-controls reveal-on-scroll">
+          <div class="filter-tabs" role="tablist" aria-label="Kategori Produk">
+            <button type="button" class="filter-btn active" data-filter="all" role="tab" aria-selected="true">
+              Semua Produk <span class="filter-count" id="count-all">22</span>
+            </button>
+            <button type="button" class="filter-btn" data-filter="minuman" role="tab" aria-selected="false">
+              Minuman <span class="filter-count" id="count-minuman">10</span>
+            </button>
+            <button type="button" class="filter-btn" data-filter="makanan" role="tab" aria-selected="false">
+              Makanan & Camilan <span class="filter-count" id="count-makanan">6</span>
+            </button>
+            <button type="button" class="filter-btn" data-filter="lainnya" role="tab" aria-selected="false">
+              Produk Lainnya <span class="filter-count" id="count-lainnya">6</span>
+            </button>
+          </div>
+
+          <!-- Quick Search -->
+          <div class="search-box">
+            <i data-lucide="search" class="search-icon"></i>
+            <input type="text" id="catalog-search" placeholder="Cari nama produk (contoh: Good Day, Beng-Beng, Tisu)..."
+              aria-label="Cari produk katalog">
+            <button type="button" id="clear-search" class="clear-search-btn" aria-label="Hapus pencarian"
+              style="display:none;">
+              <i data-lucide="x"></i>
+            </button>
+          </div>
+        </div>
+
+        <!-- Grid Produk -->
+        <div class="product-grid" id="product-grid">
+
+          <!-- ========== KATEGORI: MINUMAN (10 PRODUK) ========== -->
+          <article class="product-card" data-category="minuman" data-name="ichitan">
+            <div class="product-badge category-badge">Minuman</div>
+            <div class="product-visual">
+              <div class="product-icon-shape icon-drink">
+                <i data-lucide="cup-soda"></i>
+              </div>
+            </div>
+            <div class="product-details">
+              <h3 class="product-name">Ichitan</h3>
+              <p class="product-cat-name">Minuman Segar</p>
+              <div class="product-pricing">
+                <span class="price-value">Rp9.000</span>
+              </div>
+            </div>
+            <div class="product-action">
+              <span class="stock-pill"><i data-lucide="check"></i> Tersedia di ITS</span>
+            </div>
+          </article>
+
+          <article class="product-card" data-category="minuman" data-name="good day">
+            <div class="product-badge category-badge">Minuman</div>
+            <div class="product-visual">
+              <div class="product-icon-shape icon-drink">
+                <i data-lucide="coffee"></i>
+              </div>
+            </div>
+            <div class="product-details">
+              <h3 class="product-name">Good Day</h3>
+              <p class="product-cat-name">Kopi Botol / Minuman</p>
+              <div class="product-pricing">
+                <span class="price-value">Rp7.000</span>
+              </div>
+            </div>
+            <div class="product-action">
+              <span class="stock-pill"><i data-lucide="check"></i> Tersedia di ITS</span>
+            </div>
+          </article>
+
+          <article class="product-card" data-category="minuman" data-name="prof">
+            <div class="product-badge category-badge">Minuman</div>
+            <div class="product-visual">
+              <div class="product-icon-shape icon-drink">
+                <i data-lucide="glass-water"></i>
+              </div>
+            </div>
+            <div class="product-details">
+              <h3 class="product-name">PROF</h3>
+              <p class="product-cat-name">Minuman Ringan</p>
+              <div class="product-pricing">
+                <span class="price-value">Rp4.000</span>
+              </div>
+            </div>
+            <div class="product-action">
+              <span class="stock-pill"><i data-lucide="check"></i> Tersedia di ITS</span>
+            </div>
+          </article>
+
+          <article class="product-card" data-category="minuman" data-name="kopi abc">
+            <div class="product-badge category-badge">Minuman</div>
+            <div class="product-visual">
+              <div class="product-icon-shape icon-drink">
+                <i data-lucide="coffee"></i>
+              </div>
+            </div>
+            <div class="product-details">
+              <h3 class="product-name">Kopi ABC</h3>
+              <p class="product-cat-name">Kopi Praktis Mahasiswa</p>
+              <div class="product-pricing">
+                <span class="price-value">Rp4.000</span>
+              </div>
+            </div>
+            <div class="product-action">
+              <span class="stock-pill"><i data-lucide="check"></i> Tersedia di ITS</span>
+            </div>
+          </article>
+
+          <article class="product-card" data-category="minuman" data-name="milku">
+            <div class="product-badge category-badge">Minuman</div>
+            <div class="product-visual">
+              <div class="product-icon-shape icon-drink">
+                <i data-lucide="milk"></i>
+              </div>
+            </div>
+            <div class="product-details">
+              <h3 class="product-name">Milku</h3>
+              <p class="product-cat-name">Susu Botol Segar</p>
+              <div class="product-pricing">
+                <span class="price-value">Rp4.000</span>
+              </div>
+            </div>
+            <div class="product-action">
+              <span class="stock-pill"><i data-lucide="check"></i> Tersedia di ITS</span>
+            </div>
+          </article>
+
+          <article class="product-card" data-category="minuman" data-name="floridina">
+            <div class="product-badge category-badge">Minuman</div>
+            <div class="product-visual">
+              <div class="product-icon-shape icon-drink">
+                <i data-lucide="citrus"></i>
+              </div>
+            </div>
+            <div class="product-details">
+              <h3 class="product-name">Floridina</h3>
+              <p class="product-cat-name">Jus Jeruk Segar</p>
+              <div class="product-pricing">
+                <span class="price-value">Rp5.000</span>
+              </div>
+            </div>
+            <div class="product-action">
+              <span class="stock-pill"><i data-lucide="check"></i> Tersedia di ITS</span>
+            </div>
+          </article>
+
+          <article class="product-card" data-category="minuman" data-name="teh pucuk">
+            <div class="product-badge category-badge">Minuman</div>
+            <div class="product-visual">
+              <div class="product-icon-shape icon-drink">
+                <i data-lucide="leaf"></i>
+              </div>
+            </div>
+            <div class="product-details">
+              <h3 class="product-name">Teh Pucuk</h3>
+              <p class="product-cat-name">Teh Melati Harum</p>
+              <div class="product-pricing">
+                <span class="price-value">Rp5.000</span>
+              </div>
+            </div>
+            <div class="product-action">
+              <span class="stock-pill"><i data-lucide="check"></i> Tersedia di ITS</span>
+            </div>
+          </article>
+
+          <article class="product-card" data-category="minuman" data-name="golda">
+            <div class="product-badge category-badge">Minuman</div>
+            <div class="product-visual">
+              <div class="product-icon-shape icon-drink">
+                <i data-lucide="coffee"></i>
+              </div>
+            </div>
+            <div class="product-details">
+              <h3 class="product-name">Golda</h3>
+              <p class="product-cat-name">Kopi Latte Siap Minum</p>
+              <div class="product-pricing">
+                <span class="price-value">Rp4.000</span>
+              </div>
+            </div>
+            <div class="product-action">
+              <span class="stock-pill"><i data-lucide="check"></i> Tersedia di ITS</span>
+            </div>
+          </article>
+
+          <article class="product-card" data-category="minuman" data-name="ultramilk">
+            <div class="product-badge category-badge">Minuman</div>
+            <div class="product-visual">
+              <div class="product-icon-shape icon-drink">
+                <i data-lucide="milk"></i>
+              </div>
+            </div>
+            <div class="product-details">
+              <h3 class="product-name">Ultramilk</h3>
+              <p class="product-cat-name">Susu UHT Berkualitas</p>
+              <div class="product-pricing">
+                <span class="price-value">Rp9.000</span>
+              </div>
+            </div>
+            <div class="product-action">
+              <span class="stock-pill"><i data-lucide="check"></i> Tersedia di ITS</span>
+            </div>
+          </article>
+
+          <article class="product-card" data-category="minuman" data-name="pocari">
+            <div class="product-badge category-badge">Minuman</div>
+            <div class="product-visual">
+              <div class="product-icon-shape icon-drink">
+                <i data-lucide="droplet"></i>
+              </div>
+            </div>
+            <div class="product-details">
+              <h3 class="product-name">Pocari</h3>
+              <p class="product-cat-name">Minuman Isotonik</p>
+              <div class="product-pricing">
+                <span class="price-value">Rp7.000</span>
+              </div>
+            </div>
+            <div class="product-action">
+              <span class="stock-pill"><i data-lucide="check"></i> Tersedia di ITS</span>
+            </div>
+          </article>
+
+          <!-- ========== KATEGORI: MAKANAN DAN CAMILAN (6 PRODUK) ========== -->
+          <article class="product-card" data-category="makanan" data-name="nextar">
+            <div class="product-badge category-badge food-badge">Makanan</div>
+            <div class="product-visual">
+              <div class="product-icon-shape icon-food">
+                <i data-lucide="cookie"></i>
+              </div>
+            </div>
+            <div class="product-details">
+              <h3 class="product-name">Nextar</h3>
+              <p class="product-cat-name">Kue Camilan Cokelat</p>
+              <div class="product-pricing">
+                <span class="price-value">Rp3.000</span>
+              </div>
+            </div>
+            <div class="product-action">
+              <span class="stock-pill"><i data-lucide="check"></i> Tersedia di ITS</span>
+            </div>
+          </article>
+
+          <article class="product-card" data-category="makanan" data-name="choco pie">
+            <div class="product-badge category-badge food-badge">Makanan</div>
+            <div class="product-visual">
+              <div class="product-icon-shape icon-food">
+                <i data-lucide="cake"></i>
+              </div>
+            </div>
+            <div class="product-details">
+              <h3 class="product-name">Choco Pie</h3>
+              <p class="product-cat-name">Biskuit Pie Marshmallow</p>
+              <div class="product-pricing">
+                <span class="price-value">Rp3.000</span>
+              </div>
+            </div>
+            <div class="product-action">
+              <span class="stock-pill"><i data-lucide="check"></i> Tersedia di ITS</span>
+            </div>
+          </article>
+
+          <article class="product-card" data-category="makanan" data-name="kalpa">
+            <div class="product-badge category-badge food-badge">Makanan</div>
+            <div class="product-visual">
+              <div class="product-icon-shape icon-food">
+                <i data-lucide="cookie"></i>
+              </div>
+            </div>
+            <div class="product-details">
+              <h3 class="product-name">Kalpa</h3>
+              <p class="product-cat-name">Wafer Cokelat Kelapa</p>
+              <div class="product-pricing">
+                <span class="price-value">Rp3.000</span>
+              </div>
+            </div>
+            <div class="product-action">
+              <span class="stock-pill"><i data-lucide="check"></i> Tersedia di ITS</span>
+            </div>
+          </article>
+
+          <article class="product-card" data-category="makanan" data-name="beng-beng bengbeng">
+            <div class="product-badge category-badge food-badge">Makanan</div>
+            <div class="product-visual">
+              <div class="product-icon-shape icon-food">
+                <i data-lucide="candy"></i>
+              </div>
+            </div>
+            <div class="product-details">
+              <h3 class="product-name">Beng-Beng</h3>
+              <p class="product-cat-name">Cokelat Wafer Karamel</p>
+              <div class="product-pricing">
+                <span class="price-value">Rp3.000</span>
+              </div>
+            </div>
+            <div class="product-action">
+              <span class="stock-pill"><i data-lucide="check"></i> Tersedia di ITS</span>
+            </div>
+          </article>
+
+          <article class="product-card" data-category="makanan" data-name="siip">
+            <div class="product-badge category-badge food-badge">Makanan</div>
+            <div class="product-visual">
+              <div class="product-icon-shape icon-food">
+                <i data-lucide="sparkle"></i>
+              </div>
+            </div>
+            <div class="product-details">
+              <h3 class="product-name">Siip</h3>
+              <p class="product-cat-name">Snack Ekstrudat Gurih</p>
+              <div class="product-pricing">
+                <span class="price-value">Rp1.000</span>
+              </div>
+            </div>
+            <div class="product-action">
+              <span class="stock-pill"><i data-lucide="check"></i> Tersedia di ITS</span>
+            </div>
+          </article>
+
+          <article class="product-card" data-category="makanan" data-name="triks">
+            <div class="product-badge category-badge food-badge">Makanan</div>
+            <div class="product-visual">
+              <div class="product-icon-shape icon-food">
+                <i data-lucide="cookie"></i>
+              </div>
+            </div>
+            <div class="product-details">
+              <h3 class="product-name">Triks</h3>
+              <p class="product-cat-name">Keripik Kentang Renyah</p>
+              <div class="product-pricing">
+                <span class="price-value">Rp1.000</span>
+              </div>
+            </div>
+            <div class="product-action">
+              <span class="stock-pill"><i data-lucide="check"></i> Tersedia di ITS</span>
+            </div>
+          </article>
+
+          <!-- ========== KATEGORI: PRODUK LAINNYA (6 PRODUK) ========== -->
+          <article class="product-card" data-category="lainnya" data-name="tisu besar tissue">
+            <div class="product-badge category-badge other-badge">Lainnya</div>
+            <div class="product-visual">
+              <div class="product-icon-shape icon-other">
+                <i data-lucide="box"></i>
+              </div>
+            </div>
+            <div class="product-details">
+              <h3 class="product-name">Tisu besar</h3>
+              <p class="product-cat-name">Kebutuhan Harian</p>
+              <div class="product-pricing">
+                <span class="price-value">Rp4.000</span>
+              </div>
+            </div>
+            <div class="product-action">
+              <span class="stock-pill"><i data-lucide="check"></i> Tersedia di ITS</span>
+            </div>
+          </article>
+
+          <article class="product-card" data-category="lainnya" data-name="tisu kecil tissue">
+            <div class="product-badge category-badge other-badge">Lainnya</div>
+            <div class="product-visual">
+              <div class="product-icon-shape icon-other">
+                <i data-lucide="box"></i>
+              </div>
+            </div>
+            <div class="product-details">
+              <h3 class="product-name">Tisu kecil</h3>
+              <p class="product-cat-name">Kebutuhan Saku</p>
+              <div class="product-pricing">
+                <span class="price-value">Rp2.000</span>
+              </div>
+            </div>
+            <div class="product-action">
+              <span class="stock-pill"><i data-lucide="check"></i> Tersedia di ITS</span>
+            </div>
+          </article>
+
+          <article class="product-card" data-category="lainnya" data-name="tip-x merah tipex tipx">
+            <div class="product-badge category-badge other-badge">Lainnya</div>
+            <div class="product-visual">
+              <div class="product-icon-shape icon-other">
+                <i data-lucide="edit-3"></i>
+              </div>
+            </div>
+            <div class="product-details">
+              <h3 class="product-name">Tip-X merah</h3>
+              <p class="product-cat-name">Alat Tulis Kuliah</p>
+              <div class="product-pricing">
+                <span class="price-value">Rp5.000</span>
+              </div>
+            </div>
+            <div class="product-action">
+              <span class="stock-pill"><i data-lucide="check"></i> Tersedia di ITS</span>
+            </div>
+          </article>
+
+          <article class="product-card" data-category="lainnya" data-name="tip-x biru tipex tipx">
+            <div class="product-badge category-badge other-badge">Lainnya</div>
+            <div class="product-visual">
+              <div class="product-icon-shape icon-other">
+                <i data-lucide="edit-3"></i>
+              </div>
+            </div>
+            <div class="product-details">
+              <h3 class="product-name">Tip-X biru</h3>
+              <p class="product-cat-name">Alat Tulis Kuliah</p>
+              <div class="product-pricing">
+                <span class="price-value">Rp7.000</span>
+              </div>
+            </div>
+            <div class="product-action">
+              <span class="stock-pill"><i data-lucide="check"></i> Tersedia di ITS</span>
+            </div>
+          </article>
+
+          <article class="product-card" data-category="lainnya" data-name="peniti">
+            <div class="product-badge category-badge other-badge">Lainnya</div>
+            <div class="product-visual">
+              <div class="product-icon-shape icon-other">
+                <i data-lucide="pin"></i>
+              </div>
+            </div>
+            <div class="product-details">
+              <h3 class="product-name">Peniti</h3>
+              <p class="product-cat-name">Perlengkapan Darurat</p>
+              <div class="product-pricing">
+                <span class="price-value">Rp2.000</span>
+              </div>
+            </div>
+            <div class="product-action">
+              <span class="stock-pill"><i data-lucide="check"></i> Tersedia di ITS</span>
+            </div>
+          </article>
+
+          <article class="product-card" data-category="lainnya" data-name="pulpen bolpoin pena">
+            <div class="product-badge category-badge other-badge">Lainnya</div>
+            <div class="product-visual">
+              <div class="product-icon-shape icon-other">
+                <i data-lucide="pen-tool"></i>
+              </div>
+            </div>
+            <div class="product-details">
+              <h3 class="product-name">Pulpen</h3>
+              <p class="product-cat-name">Alat Tulis Kuliah</p>
+              <div class="product-pricing">
+                <span class="price-value">Rp3.000</span>
+              </div>
+            </div>
+            <div class="product-action">
+              <span class="stock-pill"><i data-lucide="check"></i> Tersedia di ITS</span>
+            </div>
+          </article>
+
+        </div>
+
+        <!-- State Empty Search -->
+        <div id="no-products-found" class="no-results" style="display: none;">
+          <div class="no-results-icon"><i data-lucide="package-search"></i></div>
+          <h3>Produk Tidak Ditemukan</h3>
+          <p>Coba kata kunci pencarian lain atau pilih tab kategori di atas.</p>
+          <button type="button" class="btn btn-sm btn-outline" id="btn-reset-filter">Reset Filter</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- =================================================================
+         F. PERCETAKAN & DOKUMEN SECTION
+         ================================================================= -->
+    <section class="section percetakan-section" id="percetakan">
+      <div class="container">
+        <div class="section-header text-center reveal-on-scroll">
+          <span class="section-tag">Layanan Dokumen</span>
+          <h2 class="section-title">Percetakan & Dokumen</h2>
+          <div class="section-line"></div>
+          <p class="section-description">
+            Solusi cepat, rapi, dan terpercaya untuk seluruh kebutuhan cetak tugas kuliah, makalah, laporan praktikum,
+            hingga dokumen resmi.
+          </p>
+        </div>
+
+        <!-- Service Cards Grid -->
+        <div class="service-cards-grid reveal-on-scroll">
+
+          <!-- Item 1: Print/FC Hitam Putih -->
+          <article class="service-item-card">
+            <div class="service-card-header">
+              <div class="service-icon"><i data-lucide="file-text"></i></div>
+              <span class="service-pill">Tugas & Makalah</span>
+            </div>
+            <h3 class="service-name">Print/FC hitam putih</h3>
+            <p class="service-desc">Layanan cetak atau fotokopi monokrom dengan hasil teks yang tajam dan jelas.</p>
+            <div class="service-price-box">
+              <span class="price-number">Rp500</span>
+            </div>
+          </article>
+
+          <!-- Item 2: Print/FC Warna -->
+          <article class="service-item-card featured-service">
+            <div class="featured-badge">Populer</div>
+            <div class="service-card-header">
+              <div class="service-icon"><i data-lucide="printer"></i></div>
+              <span class="service-pill">Laporan & Presentasi</span>
+            </div>
+            <h3 class="service-name">Print/FC warna</h3>
+            <p class="service-desc">Cetak warna berkualitas tinggi untuk diagram, grafik, cover makalah, dan tugas
+              visual.</p>
+            <div class="service-price-box">
+              <span class="price-number">Rp1.000</span>
+            </div>
+          </article>
+
+          <!-- Item 3: Print/FC Amplop -->
+          <article class="service-item-card">
+            <div class="service-card-header">
+              <div class="service-icon"><i data-lucide="mail"></i></div>
+              <span class="service-pill">Administrasi</span>
+            </div>
+            <h3 class="service-name">Print/FC amplop</h3>
+            <p class="service-desc">Cetak kop amplop surat organisasi, kepanitiaan, atau administrasi persuratan.</p>
+            <div class="service-price-box">
+              <span class="price-number">Rp1.000</span>
+            </div>
+          </article>
+
+          <!-- Item 4: Jilid -->
+          <article class="service-item-card">
+            <div class="service-card-header">
+              <div class="service-icon"><i data-lucide="book-open"></i></div>
+              <span class="service-pill">Finishing Rapi</span>
+            </div>
+            <h3 class="service-name">Jilid</h3>
+            <p class="service-desc">Penjilidan rapi untuk laporan akhir, proposal kegiatan, modul kuliah, dan tugas
+              besar.</p>
+            <div class="service-price-box">
+              <span class="price-number">Rp2.000</span>
+            </div>
+          </article>
+
+          <!-- Item 5: Print Stiker -->
+          <article class="service-item-card">
+            <div class="service-card-header">
+              <div class="service-icon"><i data-lucide="tag"></i></div>
+              <span class="service-pill">Label & Merchandise</span>
+            </div>
+            <h3 class="service-name">Print stiker</h3>
+            <p class="service-desc">Cetak stiker untuk label kemasan produk usaha, event, atau cinderamata kepanitiaan.
+            </p>
+            <div class="service-price-box">
+              <span class="price-number">Rp3.000</span>
+            </div>
+          </article>
+
+          <!-- Item 6: Print/FC Sertifikat -->
+          <article class="service-item-card">
+            <div class="service-card-header">
+              <div class="service-icon"><i data-lucide="award"></i></div>
+              <span class="service-pill">Piagam & Event</span>
+            </div>
+            <h3 class="service-name">Print/FC sertifikat</h3>
+            <p class="service-desc">Cetak piagam penghargaan dan sertifikat kepanitiaan dengan kertas tebal presisi.</p>
+            <div class="service-price-box">
+              <span class="price-number">Rp3.000</span>
+            </div>
+          </article>
+
+        </div>
+
+        <!-- Box Prosedur Pemesanan & CTA WhatsApp -->
+        <div class="order-procedure-box reveal-on-scroll">
+          <div class="procedure-content">
+            <div class="procedure-badge">
+              <i data-lucide="message-square"></i>
+              <span>Prosedur Pemesanan Resmi</span>
+            </div>
+            <h3 class="procedure-title">Kirim File Langsung Melalui WhatsApp</h3>
+            <p class="procedure-text">
+              Untuk melakukan pemesanan, pelanggan dapat mengirimkan dokumen melalui WhatsApp ITS.
+            </p>
+
+            <!-- 3 Langkah Sederhana -->
+            <div class="steps-row">
+              <div class="step-card">
+                <span class="step-number">1</span>
+                <strong>Kirim File Dokumen</strong>
+                <p>Kirimkan file PDF/Word ke WhatsApp ITS dengan format cetak yang diinginkan.</p>
+              </div>
+              <div class="step-card">
+                <span class="step-number">2</span>
+                <strong>Konfirmasi & Cetak</strong>
+                <p>Admin ITS akan mengonfirmasi total biaya dan langsung memproses cetak dokumen Anda.</p>
+              </div>
+              <div class="step-card">
+                <span class="step-number">3</span>
+                <strong>Ambil di Stand ITS</strong>
+                <p>Dokumen siap diambil langsung di stand ITS sesuai jadwal operasional.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="procedure-cta text-center">
+            <a href="https://wa.me/62895352585866?text=Halo%20Admin%20IT%20Solution,%20saya%20ingin%20memesan%20layanan%20percetakan%20dan%20dokumen."
+              target="_blank" rel="noopener noreferrer" class="btn btn-success btn-lg btn-wa-action">
+              <i data-lucide="send"></i>
+              <span>Pesan Sekarang (WhatsApp)</span>
+            </a>
+            <span class="wa-number-sub">Nomor WhatsApp Resmi: <strong>0895352585866</strong></span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =================================================================
+         G. KONSINYASI SECTION
+         ================================================================= -->
+    <section class="section konsinyasi-section" id="konsinyasi">
+      <div class="container">
+        <div class="section-header text-center reveal-on-scroll">
+          <span class="section-tag">Kemitraan & Titip Jual</span>
+          <h2 class="section-title">Unit Konsinyasi IT Solution</h2>
+          <div class="section-line"></div>
+          <p class="section-description">
+            ITS menyediakan fasilitas titip jual produk mahasiswa dan kerja sama dengan pihak luar untuk memperluas
+            jangkauan pasar dan menumbuhkan semangat kewirausahaan di lingkungan kampus.
+          </p>
+        </div>
+
+        <!-- Produk yang Tersedia Saat Ini -->
+        <div class="konsinyasi-products-showcase reveal-on-scroll">
+          <div class="showcase-header">
+            <div class="showcase-title-box">
+              <i data-lucide="shopping-bag" class="text-primary"></i>
+              <h3>Produk Konsinyasi yang Tersedia Saat Ini</h3>
+            </div>
+            <span class="showcase-status">Lokasi Transaksi: <strong>Stand ITS</strong></span>
+          </div>
+
+          <div class="current-products-row">
+            <div class="consignment-item-card">
+              <div class="consignment-icon">
+                <i data-lucide="cookie"></i>
+              </div>
+              <div class="consignment-meta">
+                <h4>Kerupuk</h4>
+                <p>Camilan renyah titip jual mahasiswa untuk teman makan harian.</p>
+                <span class="item-tag">Produk Titip Jual Mahasiswa</span>
+              </div>
+            </div>
+
+            <div class="consignment-item-card">
+              <div class="consignment-icon">
+                <i data-lucide="flame"></i>
+              </div>
+              <div class="consignment-meta">
+                <h4>Basreng</h4>
+                <p>Bakso goreng gurih dan pedas favorit mahasiswa di kampus.</p>
+                <span class="item-tag">Produk Titip Jual Mahasiswa</span>
+              </div>
+            </div>
+
+            <div class="consignment-item-card featured-partner">
+              <div class="consignment-icon">
+                <i data-lucide="coffee"></i>
+              </div>
+              <div class="consignment-meta">
+                <div class="partner-badge">Kerja Sama Resmi</div>
+                <h4>Kopi Brewasa</h4>
+                <p>Produk minuman kopi berkualitas melalui skema kerja sama kemitraan.</p>
+                <span class="item-tag tag-collab">Mitra Kerja Sama</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 2 Sistem Kerja Sama Sesuai Ketentuan -->
+        <div class="systems-grid reveal-on-scroll">
+          <!-- Sistem 1: Titip Jual -->
+          <article class="system-card">
+            <div class="system-header">
+              <div class="system-number">01</div>
+              <div class="system-title-box">
+                <span class="system-tag">Skema Mahasiswa</span>
+                <h3 class="system-title">SISTEM TITIP JUAL</h3>
+              </div>
+            </div>
+            <div class="system-body">
+              <p class="system-summary">
+                Ditujukan bagi mahasiswa yang memiliki usaha kuliner atau produk ritel dan ingin menitipkan penjualannya
+                di etalase stand ITS.
+              </p>
+              <div class="system-highlight-box">
+                <i data-lucide="tag"></i>
+                <div>
+                  <strong>Ketentuan Margin ITS:</strong>
+                  <p>ITS mendapatkan tambahan harga sebesar <strong>Rp500 – Rp3.000</strong> dari setiap produk yang
+                    dititipkan.</p>
+                </div>
+              </div>
+              <ul class="system-features">
+                <li><i data-lucide="check-circle-2"></i> Akses langsung ke mahasiswa dan pengunjung kampus</li>
+                <li><i data-lucide="check-circle-2"></i> Display produk di stand resmi IT Solution</li>
+                <li><i data-lucide="check-circle-2"></i> Laporan pencatatan penjualan yang transparan</li>
+              </ul>
+            </div>
+          </article>
+
+          <!-- Sistem 2: Kerja Sama -->
+          <article class="system-card system-card-collab">
+            <div class="system-header">
+              <div class="system-number">02</div>
+              <div class="system-title-box">
+                <span class="system-tag">Skema Kemitraan</span>
+                <h3 class="system-title">SISTEM KERJA SAMA</h3>
+              </div>
+            </div>
+            <div class="system-body">
+              <p class="system-summary">
+                Ditujukan bagi brand, UMKM, maupun pihak luar yang ingin menjalin kolaborasi strategis secara formal dan
+                berkesinambungan bersama ITS.
+              </p>
+              <div class="system-highlight-box highlight-collab">
+                <i data-lucide="file-signature"></i>
+                <div>
+                  <strong>Legalitas & Kesepakatan:</strong>
+                  <p>Menggunakan surat perjanjian kerja sama yang ditandatangani oleh <strong>Direktur ITS</strong> dan
+                    <strong>pihak luar</strong>. Pembagian hasil diatur berdasarkan isi perjanjian tersebut.
+                  </p>
+                </div>
+              </div>
+              <ul class="system-features">
+                <li><i data-lucide="check-circle-2"></i> Perjanjian kerja sama tertulis yang sah dan mengikat</li>
+                <li><i data-lucide="check-circle-2"></i> Skema bagi hasil disepakati bersama secara adil</li>
+                <li><i data-lucide="check-circle-2"></i> Dukungan promosi melalui ekosistem HMP-TI</li>
+              </ul>
+            </div>
+          </article>
+        </div>
+
+        <!-- Lokasi Transaksi & Hubungi Kami -->
+        <div class="konsinyasi-footer-card reveal-on-scroll">
+          <div class="footer-card-info">
+            <i data-lucide="map-pin" class="text-primary"></i>
+            <div>
+              <strong>Lokasi Transaksi:</strong>
+              <p>Seluruh transaksi konsinyasi dan titip jual dilakukan langsung di <strong>Stand / Ruang IT
+                  Solution</strong>.</p>
+            </div>
+          </div>
+          <a href="https://wa.me/62895352585866?text=Halo%20Admin%20IT%20Solution,%20saya%20tertarik%20untuk%20mengajukan%20konsinyasi%20atau%20kerja%20sama%20produk."
+            target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+            <i data-lucide="handshake"></i>
+            <span>Ajukan Titip Jual / Kerja Sama</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- =================================================================
+         H. JASA KREATIF SECTION
+         ================================================================= -->
+    <section class="section jasa-kreatif-section" id="jasa-kreatif">
+      <div class="container">
+        <div class="section-header text-center reveal-on-scroll">
+          <span class="section-tag">Studio Kreatif</span>
+          <h2 class="section-title">Layanan Jasa Kreatif</h2>
+          <div class="section-line"></div>
+          <p class="section-description">
+            IT Solution menyediakan layanan kreatif profesional yang digarap oleh mahasiswa bertalenta di bidang visual
+            dan multimedia.
+          </p>
+        </div>
+
+        <!-- 3 Layanan Kreatif Utama -->
+        <div class="creative-services-grid reveal-on-scroll">
+          <article class="creative-card">
+            <div class="creative-icon"><i data-lucide="pen-tool"></i></div>
+            <h3 class="creative-title">Desain Grafis</h3>
+            <p class="creative-desc">
+              Pembuatan desain visual estetis dan komunikatif untuk poster kegiatan, feed Instagram, banner acara,
+              brosur, sertifikat, merchandise, dan kartu identitas.
+            </p>
+            <div class="creative-tags">
+              <span>Poster Acara</span>
+              <span>Feed Medsos</span>
+              <span>Banner & Backdrop</span>
+              <span>ID Card & Sertifikat</span>
+            </div>
+          </article>
+
+          <article class="creative-card">
+            <div class="creative-icon"><i data-lucide="camera"></i></div>
+            <h3 class="creative-title">Fotografi</h3>
+            <p class="creative-desc">
+              Dokumentasi profesional setiap momen penting kegiatan organisasi, seminar akademik, event wisuda, sesi
+              foto produk katalog, dan portrait formal.
+            </p>
+            <div class="creative-tags">
+              <span>Dokumentasi Event</span>
+              <span>Foto Produk</span>
+              <span>Sesi Foto Formal</span>
+              <span>Kegiatan Organisasi</span>
+            </div>
+          </article>
+
+          <article class="creative-card">
+            <div class="creative-icon"><i data-lucide="video"></i></div>
+            <h3 class="creative-title">Videografi</h3>
+            <p class="creative-desc">
+              Produksi video berkualitas tinggi mulai dari aftermovie kegiatan, video profil kepanitiaan, konten
+              reels/TikTok dinamis, hingga video promosi produk.
+            </p>
+            <div class="creative-tags">
+              <span>Aftermovie Event</span>
+              <span>Reels & TikTok</span>
+              <span>Video Promosi</span>
+              <span>Editing & Grading</span>
+            </div>
+          </article>
+        </div>
+
+        <!-- Portfolio Gallery Showcase -->
+        <div class="portfolio-showcase reveal-on-scroll">
+          <div class="portfolio-header">
+            <div>
+              <span class="portfolio-subtitle">Etalase Karya & Referensi Portofolio</span>
+              <h3 class="portfolio-heading">Galeri Karya & Aktivitas Mahasiswa</h3>
+            </div>
+            <!-- Sumber Portofolio Resmi Instagram ITS -->
+            <a href="https://www.instagram.com/its_hmpti/" target="_blank" rel="noopener noreferrer"
+              class="btn btn-outline-dark btn-sm">
+              <i data-lucide="instagram"></i>
+              <span>Kunjungi Instagram Resmi @its_hmpti</span>
+            </a>
+          </div>
+
+          <div class="portfolio-grid">
+            <!-- Portofolio Card 1: Desain Grafis -->
+            <div class="portfolio-card">
+              <div class="portfolio-media placeholder-creative-1">
+                <div class="media-overlay">
+                  <i data-lucide="instagram"></i>
+                  <span>Lihat di @its_hmpti</span>
+                </div>
+                <div class="portfolio-badge">Desain Grafis</div>
+              </div>
+              <div class="portfolio-meta">
+                <h4>Visual Identity & Event Poster</h4>
+                <p>Desain promosi kegiatan akademik dan informasi kampus HMP-TI.</p>
+              </div>
+            </div>
+
+            <!-- Portofolio Card 2: Fotografi -->
+            <div class="portfolio-card">
+              <div class="portfolio-media placeholder-creative-2">
+                <div class="media-overlay">
+                  <i data-lucide="instagram"></i>
+                  <span>Lihat di @its_hmpti</span>
+                </div>
+                <div class="portfolio-badge">Fotografi</div>
+              </div>
+              <div class="portfolio-meta">
+                <h4>Event & Workshop Documentation</h4>
+                <p>Liputan fotografi suasana kegiatan mahasiswa dan seminar IT.</p>
+              </div>
+            </div>
+
+            <!-- Portofolio Card 3: Videografi -->
+            <div class="portfolio-card">
+              <div class="portfolio-media placeholder-creative-3">
+                <div class="media-overlay">
+                  <i data-lucide="instagram"></i>
+                  <span>Lihat di @its_hmpti</span>
+                </div>
+                <div class="portfolio-badge">Videografi</div>
+              </div>
+              <div class="portfolio-meta">
+                <h4>Aftermovie & Social Content</h4>
+                <p>Produksi video dinamis untuk publikasi reels dan dokumentasi acara.</p>
+              </div>
+            </div>
+          </div>
+
+          <p class="portfolio-disclaimer">
+            <i data-lucide="info"></i>
+            <em>Catatan: Kunjungi akun Instagram resmi <a href="https://www.instagram.com/its_hmpti/" target="_blank"
+                rel="noopener noreferrer">@its_hmpti</a> untuk melihat pembaruan karya portofolio, kegiatan terkini, dan
+              aktivitas unit usaha IT Solution.</em>
+          </p>
+        </div>
+
+        <!-- Informasi Pemesanan Jasa Kreatif -->
+        <div class="creative-order-card reveal-on-scroll">
+          <div class="creative-order-text">
+            <h3>Tertarik Menggunakan Layanan Jasa Kreatif?</h3>
+            <p>Pemesanan dapat dilakukan dengan dua cara mudah:</p>
+            <ul class="creative-method-list">
+              <li><i data-lucide="map-pin"></i> <strong>Datang langsung ke Stand ITS</strong> di lingkungan kampus.</li>
+              <li><i data-lucide="message-circle"></i> <strong>Melalui WhatsApp ITS</strong> di nomor
+                <strong>0895352585866</strong>.
+              </li>
+            </ul>
+          </div>
+          <div class="creative-order-action">
+            <a href="https://wa.me/62895352585866?text=Halo%20Admin%20IT%20Solution,%20saya%20ingin%20konsultasi%20layanan%20Jasa%20Kreatif%20(Desain/Foto/Video)."
+              target="_blank" rel="noopener noreferrer" class="btn btn-success btn-lg">
+              <i data-lucide="message-circle"></i>
+              <span>Konsultasi Sekarang</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =================================================================
+         I. OPERASIONAL SECTION
+         ================================================================= -->
+    <section class="section operasional-section" id="operasional">
+      <div class="container">
+        <div class="section-header text-center reveal-on-scroll">
+          <span class="section-tag">Waktu Layanan</span>
+          <h2 class="section-title">Jam Operasional IT Solution</h2>
+          <div class="section-line"></div>
+          <p class="section-description">
+            Ketahui waktu buka stand dan jam pelayanan kami agar Anda dapat berkunjung atau bertransaksi tepat waktu.
+          </p>
+        </div>
+
+        <div class="operasional-grid reveal-on-scroll">
+          <!-- Card Utama Jadwal -->
+          <div class="operasional-main-card">
+            <div class="op-header">
+              <div class="op-icon-box">
+                <i data-lucide="clock"></i>
+              </div>
+              <div>
+                <span class="op-sub">Stand & Layanan Kampus</span>
+                <h3 class="op-title">Jadwal Operasional Resmi</h3>
+              </div>
+            </div>
+
+            <div class="op-table-wrap">
+              <table class="op-table">
+                <thead>
+                  <tr>
+                    <th>Hari</th>
+                    <th>Jam Layanan</th>
+                    <th>Keterangan</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>
+                      <span class="day-badge day-weekday">Senin – Jumat</span>
+                    </td>
+                    <td>
+                      <strong class="time-highlight">07.30 – 21.30 WITA</strong>
+                    </td>
+                    <td>Hari Reguler Perkuliahan</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <span class="day-badge day-weekend">Sabtu</span>
+                    </td>
+                    <td>
+                      <strong class="time-highlight">07.30 – 21.30 WITA</strong>
+                    </td>
+                    <td>Beroperasi jika terdapat jadwal ekstensi</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <span class="day-badge day-off">Minggu & Libur Nasional</span>
+                    </td>
+                    <td>
+                      <span class="text-muted">Tutup</span>
+                    </td>
+                    <td>Layanan stand libur</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <div class="op-note">
+              <i data-lucide="alert-circle"></i>
+              <p>Layanan konsultasi melalui WhatsApp tetap dapat menerima pesan di luar jam operasional dan akan dibalas
+                pada jam kerja aktif.</p>
+            </div>
+          </div>
+
+          <!-- Card Realtime Clock & Status -->
+          <div class="operasional-status-card">
+            <div class="status-box-header">
+              <h4>Status Operasional Hari Ini</h4>
+              <span class="zone-badge">Zona Waktu WITA (UTC+8)</span>
+            </div>
+
+            <!-- Jam Digital Realtime via JS -->
+            <div class="realtime-clock-display">
+              <span id="current-wita-time">--:--:--</span>
+              <span class="time-suffix">WITA</span>
+            </div>
+            <div class="realtime-date-display" id="current-wita-date">
+              Memuat tanggal...
+            </div>
+
+            <!-- Live Status Indicator -->
+            <div class="live-status-pill" id="live-status-pill">
+              <span class="status-dot" id="live-status-dot"></span>
+              <span class="status-name" id="live-status-name">Memeriksa status...</span>
+            </div>
+
+            <p class="live-status-desc" id="live-status-desc">
+              Sistem secara otomatis menyesuaikan status berdasarkan waktu Indonesia Bagian Tengah (WITA).
+            </p>
+
+            <a href="https://wa.me/62895352585866" target="_blank" rel="noopener noreferrer"
+              class="btn btn-outline-white btn-block">
+              <i data-lucide="message-circle"></i>
+              <span>Tanya Admin via WhatsApp</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =================================================================
+         J. CONTACT SECTION
+         ================================================================= -->
+    <section class="section contact-section" id="kontak">
+      <div class="container">
+        <div class="section-header text-center reveal-on-scroll">
+          <span class="section-tag">Hubungi Kami</span>
+          <h2 class="section-title">Kontak IT Solution</h2>
+          <div class="section-line"></div>
+          <p class="section-description">
+            Punya pertanyaan mengenai produk F&B, pemesanan print dokumen, pengajuan konsinyasi, atau kebutuhan jasa
+            kreatif? Jangan ragu untuk menghubungi kami.
+          </p>
+        </div>
+
+        <div class="contact-grid reveal-on-scroll">
+          <!-- Info Kartu Kontak -->
+          <div class="contact-info-panel">
+            <div class="info-brand-header">
+              <img src="Logo ITS.jpeg" alt="Logo ITS" class="contact-brand-logo"
+                onerror="this.onerror=null;this.src='assets/images/Logo%20ITS.jpeg'">
+              <div>
+                <h3>IT SOLUTION</h3>
+                <span>Unit Usaha HMP-TI</span>
+              </div>
+            </div>
+
+            <p class="info-tagline">
+              Hadir memberikan solusi praktis, terjangkau, dan terpercaya bagi seluruh civitas akademika dan mahasiswa.
+            </p>
+
+            <div class="contact-methods">
+              <!-- WhatsApp ITS -->
+              <a href="https://wa.me/62895352585866" target="_blank" rel="noopener noreferrer"
+                class="contact-method-card">
+                <div class="method-icon icon-wa">
+                  <i data-lucide="message-circle"></i>
+                </div>
+                <div class="method-details">
+                  <span class="method-title">WhatsApp Resmi ITS</span>
+                  <strong class="method-value">0895352585866</strong>
+                  <span class="method-sub">Klik untuk langsung chat admin</span>
+                </div>
+                <i data-lucide="external-link" class="method-arrow"></i>
+              </a>
+
+              <!-- Instagram ITS -->
+              <a href="https://www.instagram.com/its_hmpti/" target="_blank" rel="noopener noreferrer"
+                class="contact-method-card">
+                <div class="method-icon icon-ig">
+                  <i data-lucide="instagram"></i>
+                </div>
+                <div class="method-details">
+                  <span class="method-title">Instagram Resmi ITS</span>
+                  <strong class="method-value">@its_hmpti</strong>
+                  <span class="method-sub">Update produk, katalog, & info terbaru</span>
+                </div>
+                <i data-lucide="external-link" class="method-arrow"></i>
+              </a>
+
+              <!-- Instagram HMPTI -->
+              <a href="https://www.instagram.com/its_hmpti/" target="_blank" rel="noopener noreferrer"
+                class="contact-method-card">
+                <div class="method-icon icon-hmpti">
+                  <i data-lucide="globe"></i>
+                </div>
+                <div class="method-details">
+                  <span class="method-title">Instagram HMP-TI</span>
+                  <strong class="method-value">HMP-TI Official</strong>
+                  <span class="method-sub">Induk organisasi mahasiswa Teknik Informatika</span>
+                </div>
+                <i data-lucide="external-link" class="method-arrow"></i>
+              </a>
+
+              <!-- Jam Operasional Ringkasan -->
+              <div class="contact-method-card no-hover">
+                <div class="method-icon icon-time">
+                  <i data-lucide="clock"></i>
+                </div>
+                <div class="method-details">
+                  <span class="method-title">Jam Operasional Stand</span>
+                  <strong class="method-value">07.30 – 21.30 WITA</strong>
+                  <span class="method-sub">Senin – Jumat (Sabtu jika ekstensi)</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Quick WhatsApp Launcher Box -->
+          <div class="contact-action-panel">
+            <div class="launcher-card">
+              <div class="launcher-header">
+                <div class="wa-badge-pulse">
+                  <i data-lucide="message-square"></i>
+                </div>
+                <div>
+                  <h3 class="launcher-title">Mulai Percakapan WhatsApp</h3>
+                  <p class="launcher-desc">Pilih keperluan Anda untuk membuat pesan pembuka secara otomatis:</p>
+                </div>
+              </div>
+
+              <div class="quick-messages-list">
+                <a href="https://wa.me/62895352585866?text=Halo%20Admin%20IT%20Solution,%20saya%20ingin%20bertanya%20mengenai%20produk%20F%26B%20di%20stand%20ITS."
+                  target="_blank" rel="noopener noreferrer" class="quick-msg-btn">
+                  <i data-lucide="coffee"></i>
+                  <span>Tanya Stok Produk F&B</span>
+                </a>
+
+                <a href="https://wa.me/62895352585866?text=Halo%20Admin%20IT%20Solution,%20saya%20ingin%20mengirimkan%20file%20untuk%20layanan%20percetakan%20dokumen."
+                  target="_blank" rel="noopener noreferrer" class="quick-msg-btn">
+                  <i data-lucide="printer"></i>
+                  <span>Pesan Cetak / Print Dokumen</span>
+                </a>
+
+                <a href="https://wa.me/62895352585866?text=Halo%20Admin%20IT%20Solution,%20saya%20ingin%20mengajukan%20titip%20jual%20(konsinyasi)%20atau%20kerja%20sama%20produk."
+                  target="_blank" rel="noopener noreferrer" class="quick-msg-btn">
+                  <i data-lucide="handshake"></i>
+                  <span>Pengajuan Titip Jual / Konsinyasi</span>
+                </a>
+
+                <a href="https://wa.me/62895352585866?text=Halo%20Admin%20IT%20Solution,%20saya%20ingin%20konsultasi%20layanan%20Jasa%20Kreatif%20(Desain/Foto/Video)."
+                  target="_blank" rel="noopener noreferrer" class="quick-msg-btn">
+                  <i data-lucide="palette"></i>
+                  <span>Konsultasi Jasa Kreatif</span>
+                </a>
+              </div>
+
+              <div class="launcher-footer">
+                <a href="https://wa.me/62895352585866" target="_blank" rel="noopener noreferrer"
+                  class="btn btn-success btn-block btn-lg">
+                  <i data-lucide="send"></i>
+                  <span>Buka Chat Langsung (0895352585866)</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- =================================================================
+       K. FOOTER SECTION
+       ================================================================= -->
+  <footer class="site-footer">
+    <div class="container footer-container">
+      <div class="footer-top">
+        <!-- Brand Info -->
+        <div class="footer-brand-col">
+          <div class="footer-logo-row">
+            <img src="Logo ITS.jpeg" alt="Logo Resmi IT Solution" class="footer-logo"
+              onerror="this.onerror=null;this.src='assets/images/Logo%20ITS.jpeg'">
+            <div class="footer-brand-text">
+              <span class="footer-brand-name">IT SOLUTION</span>
+              <span class="footer-brand-tag">Unit Usaha HMP-TI</span>
+            </div>
+          </div>
+          <p class="footer-description">
+            Unit usaha di bawah naungan Himpunan Mahasiswa Program Studi Teknik Informatika (HMP-TI) yang menyediakan
+            layanan F&B, Percetakan, Konsinyasi, dan Jasa Kreatif untuk mahasiswa dan civitas akademika.
+          </p>
+          <div class="footer-social-links">
+            <a href="https://www.instagram.com/its_hmpti/" target="_blank" rel="noopener noreferrer"
+              aria-label="Instagram IT Solution" class="social-icon-btn">
+              <i data-lucide="instagram"></i>
+            </a>
+            <a href="https://wa.me/62895352585866" target="_blank" rel="noopener noreferrer"
+              aria-label="WhatsApp IT Solution" class="social-icon-btn">
+              <i data-lucide="message-circle"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Quick Links: Navigasi Website -->
+        <div class="footer-links-col">
+          <h4 class="footer-col-title">Navigasi Halaman</h4>
+          <ul class="footer-nav-list">
+            <li><a href="#beranda">Beranda</a></li>
+            <li><a href="#about">Tentang Kami</a></li>
+            <li><a href="#unit-usaha">Unit Usaha</a></li>
+            <li><a href="#katalog">Katalog F&B</a></li>
+            <li><a href="#operasional">Jam Operasional</a></li>
+            <li><a href="#kontak">Hubungi Kami</a></li>
+          </ul>
+        </div>
+
+        <!-- Quick Links: Unit Usaha -->
+        <div class="footer-links-col">
+          <h4 class="footer-col-title">Unit Usaha ITS</h4>
+          <ul class="footer-nav-list">
+            <li><a href="#katalog">F&B (Makanan & Minuman)</a></li>
+            <li><a href="#percetakan">Percetakan & Dokumen</a></li>
+            <li><a href="#konsinyasi">Unit Konsinyasi & Kemitraan</a></li>
+            <li><a href="#jasa-kreatif">Jasa Kreatif (Desain, Foto, Video)</a></li>
+          </ul>
+        </div>
+
+        <!-- Kontak & Operasional Ringkas -->
+        <div class="footer-contact-col">
+          <h4 class="footer-col-title">Informasi Kontak</h4>
+          <ul class="footer-contact-list">
+            <li>
+              <i data-lucide="phone"></i>
+              <span>0895352585866 (WhatsApp)</span>
+            </li>
+            <li>
+              <i data-lucide="instagram"></i>
+              <span>@its_hmpti</span>
+            </li>
+            <li>
+              <i data-lucide="clock"></i>
+              <span>07.30 – 21.30 WITA</span>
+            </li>
+            <li>
+              <i data-lucide="map-pin"></i>
+              <span>Stand IT Solution, HMP-TI</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div class="footer-bottom-content">
+          <p class="copyright-text">
+            &copy; 2026 <strong>IT SOLUTION</strong> — Unit Usaha HMP-TI. All rights reserved.
+          </p>
+          <p class="credit-text">
+            Landing Page Katalog Digital Resmi
+          </p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- =================================================================
+       MODAL: LIHAT FOTO DAFTAR HARGA ASLI
+       ================================================================= -->
+  <div class="modal-overlay" id="price-photo-modal" aria-hidden="true" role="dialog" aria-modal="true"
+    aria-labelledby="modal-title">
+    <div class="modal-container">
+      <div class="modal-header">
+        <div class="modal-title-group">
+          <i data-lucide="file-check" class="text-primary"></i>
+          <h3 id="modal-title">Daftar Harga Asli IT Solution</h3>
+        </div>
+        <button type="button" class="modal-close-btn" id="modal-close-btn" aria-label="Tutup foto daftar harga">
+          <i data-lucide="x"></i>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="modal-image-wrapper">
+          <img src="Daftar Harga.jpeg" alt="Foto Asli Daftar Harga IT Solution" class="modal-doc-img" id="modal-doc-img"
+            onerror="this.onerror=null;this.src='assets/images/Daftar%20Harga.jpeg'">
+        </div>
+        <div class="modal-caption">
+          <p><i data-lucide="info"></i> Foto fisik daftar harga asli produk & layanan di stand IT Solution HMP-TI.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Back to Top Floating Button -->
+  <button type="button" class="back-to-top" id="back-to-top" aria-label="Kembali ke atas">
+    <i data-lucide="arrow-up"></i>
+  </button>
+
+  <!-- External Vanilla JavaScript -->
+  <script src="script.js"></script>
+
+  <!-- Initialize Lucide Icons -->
+  <script>
+    if (typeof lucide !== 'undefined') {
+      lucide.createIcons();
+    }
+  </script>
+</body>
+
+</html>
